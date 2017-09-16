@@ -12,7 +12,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 var mongoose = require("mongoose");
-mongoose.connect("mongodb://raymond:password@ds139994.mlab.com:39994/bookshops")
 // mongoose.connect("mongodb://localhost:27017/bookshop");
 var Book = require("./models/books");
 var db = mongoose.connection;
